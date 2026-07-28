@@ -36,3 +36,18 @@
 // Create a List of numbers, sort it in ascending order, then print it in reverse order.
 // Create a Student Marks Manager that stores marks of six students, calculates the total, average, highest mark, and lowest mark.
 // Hard: Create a Shopping Cart program using a List. Allow the user to add five items, remove one item, and display the final shopping cart along with the total number of items.
+
+
+
+// Homework
+
+// Create a List of numbers and print only the odd numbers using where().
+// Create a List of names and convert all names to lowercase using map().
+// Create a Shopping Cart List and display all items using forEach().
+// Create a Map of five students and their marks, then print all records.
+// Create a Set of numbers and print its length.
+// Create a Student Marks Manager that calculates the total, average, highest mark, and lowest mark.
+// Create a Contact List using a Map and allow the user to search for a contact using containsKey().
+// Create a Shopping Cart where the user enters items, removes one item, and displays the final cart.
+// Create a program that stores duplicate numbers in a List, removes duplicates by converting it into a Set, and prints the unique numbers.
+// Hard: Create a Student Database using a Map<String, int>. Store student names and marks, display all students, print only those who scored 75 or above using where(), and calculate the class average.
