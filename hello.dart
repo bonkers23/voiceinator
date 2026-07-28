@@ -317,17 +317,330 @@
 //   }
 // }
 
+// Fucntion........
 
-// Homework (Medium & Hard)
-// Write a Dart program to input the length and width of a rectangle and calculate its area.
-// Create a calculator that performs addition, subtraction, multiplication, division, and remainder on two numbers entered by the user.
-// Write a program to input a student's marks and display Pass or Fail using an if-else statement.
-// Write a program to input a number and check whether it is Even or Odd.
-// Write a Dart program using a switch statement to display the name of a month based on a number (1–12).
-// Write a program to print the multiplication table of any number from 1 to 20 using a for loop.
-// Write a program that prints all even numbers from 1 to 100 using a while loop.
-// Write a program to calculate the sum of the numbers from 1 to N, where N is entered by the user.
-// Write a Dart program to check whether a number is Prime or Not Prime.
-// Hard: Create a menu-driven calculator using a switch statement. The user enters two numbers and selects an operation (+, -, *, /). Display the calculated result based on the selected operation.
+// syntax....
 
+// returnType FunctionName(parameter){
+//   // block of code
+// }
 
+// void greet() {
+//   print("Hello how are you");
+// }
+
+// void main() {
+//   greet();
+//   greet();
+//   greet();
+// }
+
+// void greet(String name) {
+//   print("Hello $name");
+// }
+
+// void main() {
+//   greet("Bob");
+//   greet("Rio");
+// }
+
+// void add(int a, int b) {
+//   print(a + b);
+// }
+
+// void main() {
+//   add(10, 20);
+// }
+
+// Return values........
+
+// int add(int a, int b) {
+//   return a + b;
+
+// }
+
+// void main() {
+
+//   int result = add(5, 8);
+//   print(result);
+// }
+
+// Optional Parameter........
+
+// void student(String name, [int age = 14]) {
+//   print("Name: $name");
+//   print("Age: $age");
+// }
+
+// void main() {
+//   student("Bob");
+//   student("John", 18);
+// }
+
+// void student({required String name, required int age}) {
+//   print(name);
+//   print(age);
+// }
+
+// void main() {
+//   student(name: "Bob", age: 15);
+// }
+
+// Arrow function.............
+
+// int square(int number) => number * number;
+
+// void main() {
+//   print(square(5));
+// }
+
+// 5 * 4 * 3 * 2 * 1 = 120
+
+// import 'dart:io';
+
+// int factorial(int n) {
+//   int fact = 1;
+//   for (int i = 1; i <= n; i++) {
+//     fact = fact * i;
+//   }
+//   return fact;
+// }
+
+// void main() {
+//   print("Enter number: ");
+//   int number = int.parse(stdin.readLineSync()!);
+//   print("Factoria; = ${factorial((number))}");
+// }
+
+// List.....
+
+// int marks1 = 10
+// int marks2 = 20
+// int marks3 = 30
+
+// void main() {
+//   List<String> fruits = ["apple", "banana", "mango"];
+//   print(fruits);
+// }
+
+// void main() {
+//   List<int> fruits = [30, 10, 40, 20, 50, 12];
+// print(fruits);
+// accessing element using index
+// print(fruits[0]);
+// print(fruits[3]);
+// Updating element
+// fruits[1] = 100;
+// print(fruits);
+
+// add()
+// fruits.add(200);
+// print(fruits);
+
+// addAll()
+
+// fruits.addAll([300, 400, 15]);
+// print(fruits);
+
+// insert()
+// fruits.insert(2, 1000);
+// print(fruits);
+
+// remove()
+
+// fruits.remove(40);
+// print(fruits);
+
+// removeAt()
+
+// fruits.removeAt(2);
+// print(fruits);
+
+// clear()
+
+// fruits.clear();
+// print(fruits);
+
+// contains()
+// print(fruits.contains(1000));
+// print(fruits);
+
+// indexOf()
+
+// print(fruits.indexOf(40));
+
+// sort()
+// fruits.sort();
+// print(fruits);
+
+// print(fruits.reversed);
+
+// List Operations.....
+
+// length....
+
+// print(fruits.length);
+
+// first....
+// print(fruits.first);
+
+// last...
+
+// print(fruits.last);
+
+// }
+
+// Looping.........
+
+// using for loop
+
+// void main() {
+//   List<String> fruits = ["apple", "banana", "mango", "grapes", "watermelon"];
+
+//   for (int i = 0; i < fruits.length; i++) {
+//     print(fruits[i]);
+//   }
+// }
+
+// for in loop.........
+
+// void main() {
+//   List<String> fruits = ["apple", "banana", "mango", "grapes", "watermelon"];
+
+//   for (String i in fruits) {
+//     print(i);
+//   }
+// }
+
+// Store marks of student in a list and claculate the total and average.
+
+// void main() {
+//   List<int> marks = [80, 75, 90, 85, 70];
+//   int total = 0;
+//   for (int i in marks) {
+//     total += i;
+//   }
+//   double average = total / marks.length;
+//   print("Total: $total");
+//   print("Average: $average");
+// }
+
+// Sets and Maps...........
+
+// void main() {
+//   Set<int> numbers = {10, 20, 30, 10, 20, 40, 50};
+//   print(numbers);
+// }
+
+// void main() {
+//   Set<String> fruits = {"Apple", "Banana", "Mango"};
+//   print(fruits);
+// }
+
+// void main() {
+//   Set<String> cities = {};
+//   cities.add("Delhi");
+//   cities.add("Mumbai");
+//   // print(cities);
+
+//   // remove
+
+//   // contains()
+
+//   // print(cities.contains("Delhi"));
+
+//   // length
+
+//   // Union()
+
+// }
+
+// Set Operations........
+
+// union
+
+// void main() {
+//   Set<int> set1 = {1, 2, 3};
+//   Set<int> set2 = {3, 4, 5};
+//   // print(set1.union(set2));
+
+//   // intersection...
+
+//   // print(set1.intersection(set2));
+
+//   // difference()...
+
+//   // print(set1.difference(set2));
+
+//   for(int i in set1){
+//     print(i);
+//   }
+// }
+
+// Map....
+
+// void main() {
+//   Map<int, String> student = {101: "Bob", 102: "Joe", 103: "Riya"};
+//   // print(student);
+
+//   print(student[101]);
+
+//   // unpdate
+//   // student[102] = "Hannah";
+//   // print(student);
+
+//   // remove()
+//   // student.remove(103);
+//   // print(student);
+
+//   // length
+
+//   // print(student.length);
+
+//   student.forEach((key, value) {
+//     print("$key : $value");
+//   });
+// }
+
+// for loop vs forEach()
+
+// where()
+
+// void main() {
+//   List<int> numbers = [10, 15, 20, 25, 30];
+//   var even = numbers.where((num) => num % 2 == 0);
+//   print(even.toList());
+// }
+
+// void main() {
+//   List<String> names = ["Bob", "Riya", "Rahul", "Jain"];
+//   var result = names.where((name) => name.startsWith("R"));
+//   print(result.toList());
+// }
+
+// map()
+
+// void main() {
+//   List<int> numbers = [1, 2, 3, 4, 5, 6];
+//   var square = numbers.map((num) => num * num);
+//   print(square.toList());
+// }
+
+// where vs map
+
+// 0, 1, 1, 2, 3, 5, 8, 13, 21....
+
+// void fibonacci(int n) {
+//   int first = 0;
+//   int second = 1;
+//   print("First $n Fibonacci Numbers:");
+//   for (int i = 1; i <= n; i++) {
+//     print(first);
+//     int next = first + second;
+//     first = second;
+//     second = next;
+//   }
+// }
+// void main(){
+//   fibonacci(10);
+// }
