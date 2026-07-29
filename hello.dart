@@ -644,3 +644,391 @@
 // void main(){
 //   fibonacci(10);
 // }
+
+// OOP
+
+// Class
+
+// class ClassName{
+
+// }
+
+// class Student {
+//   String? name;
+//   int? age;
+//   int? marks;
+// }
+
+// Student student1 = Student();
+
+// class Student {
+//   String? name;
+//   int? age;
+//   int? marks;
+// }
+
+// void main() {
+//   Student s1 = Student();
+//   Student s2 = Student();
+//   s1.name = "Bob";
+//   s1.age = 20;
+//   s1.marks = 90;
+//   s2.name = "Joe";
+//   s2.age = 40;
+//   s2.marks = 80;
+//   print(s1.name);
+//   print(s1.age);
+//   print(s1.marks);
+//   print(s2.name);
+//   print(s2.age);
+//   print(s2.marks);
+// }
+
+// Constructor........
+
+// Types
+
+// Default Constructor...
+
+// class Student {
+//   String? name;
+// }
+
+// void main() {
+//   Student s1 = Student();
+//   s1.name = "Bob";
+//   print(s1.name);
+// }
+
+// user defined
+
+// class Student {
+//   Student() {
+//     print("Constructor Called");
+//   }
+// }
+
+// void main() {
+//   Student s1 = Student();
+// }
+
+// class Student {
+//   String? name;
+//   int? age;
+//   Student(String n, int a) {
+//     name = n;
+//     age = a;
+//   }
+// }
+
+// void main() {
+//   Student s1 = Student("Bob", 20);
+//   print(s1.name);
+//   print(s1.age);
+// }
+
+// Uisng this keyword........
+
+// s1
+// s2
+
+// class Student {
+//   String name;
+//   int age;
+//   Student(this.name, this.age);
+// }
+
+// void main() {
+//   Student s1 = Student("Bob", 20);
+//   print(s1.name);
+//   print(s1.age);
+// }
+
+// Named Constructors..........
+
+// class Student {
+//   Student() {
+//     print("Default Constructor");
+//   }
+//   Student.details() {
+//     print("Name Constructor");
+//   }
+// }
+
+// void main() {
+//   Student s1 = Student();
+//   Student s2 = Student.details();
+// }
+
+// class Car {
+//   String? company;
+//   String? model;
+
+//   Car() {
+//     company = "BMW";
+//     model = "GT";
+//   }
+//   Car.sports() {
+//     company = "Ford";
+//     model = "Mustang";
+//   }
+// }
+
+// void main() {
+//   Car car1 = Car();
+//   Car car2 = Car.sports();
+//   print(car1.company);
+//   print(car2.company);
+// }
+
+// class Car {
+//   String company;
+//   String model;
+//   Car(this.company, this.model);
+//   Car.sports(this.company, this.model);
+// }
+
+// void main() {
+//   Car car1 = Car("BMW", "GT");
+//   Car car2 = Car.sports("Ford", "Mustang");
+//   print(car1.company);
+//   print(car2.company);
+// }
+
+// Inheritance............
+
+// This is my one class having variables and methods
+
+// 2nd class
+
+// class Animal {
+//   void eat() {
+//     print("Animal is eating");
+//   }
+// }
+
+// class Dog extends Animal {
+//   void bark() {
+//     print("Dog is barking");
+//   }
+// }
+
+// void main() {
+//   Dog d = Dog();
+//   d.eat();
+//   d.bark();
+// }
+
+// class Person {
+//   String name;
+//   int age;
+//   Person(this.name, this.age);
+
+//   void showPerson() {
+//     print("Name : $name");
+//     print("Age : $age");
+//   }
+// }
+
+// class Student extends Person {
+//   int marks;
+//   Student(String name, int age, this.marks) : super(name, age);
+//   void showStudent() {
+//     showPerson();
+//     print("Marks $marks");
+//   }
+// }
+
+// void main() {
+//   Student s1 = Student("Bob", 15, 90);
+//   s1.showStudent();
+// }
+
+// Getters and
+// Encapsulation......
+
+// Data hiding........
+
+// student.marks = 500;
+
+// Public and Private Members(variables)
+
+// _name
+
+// class Student(){
+//   String _name = "Bob";
+//   int _marks = 90;
+// }
+
+// Getter
+
+// _salary
+
+// employee._salary  (This is not allowed)
+
+// syntax...
+
+// get getterName {
+//   return variable
+// }
+
+// class Student {
+//   String _name = "Bob";
+//   String get name {
+//     return _name;
+//   }
+// }
+
+// void main() {
+//   Student s = Student();
+//   print(s.name);
+// }
+
+// Setter (Change or update private variables)
+
+// set setterName(dataType value){
+//  }
+
+// class Student {
+//   String _name = "";
+//   set name(String newName) {
+//     _name = newName;
+//   }
+
+//   String get name {
+//     return _name;
+//   }
+// }
+
+// void main() {
+//   Student s = Student();
+//   s.name = "Bob";
+//   print(s.name);
+// }
+
+// class Student {
+//   int _marks = 0;
+//   set marks(int value) {
+//     if (value >= 0 && value <= 100) {
+//       _marks = value;
+//     } else {
+//       print("Invalid Marks");
+//     }
+//   }
+
+//   int get marks {
+//     return _marks;
+//   }
+// }
+
+// void main() {
+//   Student s = Student();
+//   s.marks = 95;
+//   print(s.marks);
+//   s.marks = 150;
+// }
+
+// class BankAccount {
+//   double _balance = 1000;
+//   double get balance {
+//     return _balance;
+//   }
+
+//   set balance(double amount) {
+//     if (amount >= 0) {
+//       _balance = amount;
+//     } else {
+//       print("Balance cannot be negative.");
+//     }
+//   }
+// }
+
+// void main() {
+//   BankAccount account = BankAccount();
+//   print(account.balance);
+//   account.balance = 2500;
+//   print(account.balance);
+// }
+
+// getter vs setter...
+
+// Inheritance feature.....
+
+// Class Bob
+// In this i have method called sound()
+// inside this sound method i am saying to print ("Hello bob")
+
+// Child is using class bob features
+// it is also using sound()
+// This child class is updating this sound method And now it print("Hello john")
+
+// Object of my child class
+// and when i call that sound using class object
+
+// Polymorphism........
+
+// dogSound...
+// catSound()
+// cowSound()
+
+// sound()
+
+// Types of Poly......
+
+// two types...
+
+// Compile-Time Poly
+
+// it optional Parameters....
+
+// Named parameters
+
+// Runtime Poly
+
+// class Animal {
+//   void sound() {
+//     print("Animals makes a sound");
+//   }
+// }
+
+// class Dog extends Animal {
+//   @override
+//   void sound() {
+//     print("Dog barks");
+//   }
+// }
+
+// class Cat extends Animal {
+//   @override
+//   void sound() {
+//     print("Cats meows");
+//   }
+// }
+
+// void main() {
+//   Dog dog = Dog();
+//   Cat cat = Cat();
+//   dog.sound();
+//   cat.sound();
+// }
+
+// super with method overriding.........
+
+// class Animal {
+//   void sound() {
+//     print("Animals makes a sound");
+//   }
+// }
+
+// class Dog extends Animal {
+//   @override
+//   void sound() {
+//     super.sound();
+//     print("Dog barks");
+//   }
+// }
+
+// void main() {
+//   Dog dog = Dog();
+//   dog.sound();
+// }
