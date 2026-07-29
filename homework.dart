@@ -51,3 +51,43 @@
 // Create a Shopping Cart where the user enters items, removes one item, and displays the final cart.
 // Create a program that stores duplicate numbers in a List, removes duplicates by converting it into a Set, and prints the unique numbers.
 // Hard: Create a Student Database using a Map<String, int>. Store student names and marks, display all students, print only those who scored 75 or above using where(), and calculate the class average.
+
+
+
+
+// OOPs
+
+// Homework
+// Create a Mobile class with brand, RAM, and storage.
+// Create two objects of a Book class and print their details.
+// Write a constructor that prints "Welcome to Dart OOP".
+// Create a Person class with a parameterized constructor.
+// Create a Car class using the this keyword in the constructor.
+// Create a Teacher class with a named constructor Teacher.math().
+// Create a BankAccount class with accountNumber and balance.
+// Create three Student objects using the same class.
+// Create a Movie class with a named constructor Movie.action().
+// Create a Hospital class with a default constructor and a named constructor Hospital.emergency().
+
+
+// Create a Student class with a private _name variable and display it using a getter.
+// Create an Employee class with a private _salary variable and update it using a setter.
+// Create a BankAccount class where the balance cannot be negative.
+// Create a Car class with private variables _company and _model, and access them using getters.
+// Create a Book class with private variables _title and _author, and update them using setters.
+// Create a Product class where the price must always be greater than ₹0.
+// Create a Teacher class with private variables _name and _subject, then use getters to display them.
+// Create a Movie class where the rating should only be between 1 and 5.
+// Create a Hospital class with a private _patientName variable and access it using a getter.
+// Create a LibraryBook class with private variables _bookName and _bookId, and use both getters and setters.
+
+// Create an Animal class and override the sound() method in a Dog class.
+// Create a Vehicle class and override the start() method in a Car class.
+// Create a Shape class and override the draw() method in a Rectangle class.
+// Create an Employee class and override the work() method in a Manager class.
+// Create a Person class and override the walk() method in a Student class.
+// Create a Bird class and override the fly() method in an Eagle class.
+// Create a Teacher class and override the teach() method in a ScienceTeacher class.
+// Create a BankAccount class and override the display() method in a SavingsAccount class.
+// Create a Car class and use super.start() inside the child class before printing a custom message.
+// Create a Hospital class and override the service() method in an EmergencyWard class.
